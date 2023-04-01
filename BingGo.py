@@ -16,7 +16,7 @@ driver = Edge(options=options, executable_path=driver_path)
 search_keywords = ['apple', 'orange', 'banana', 'grape', 'kiwi', 'pear', 'watermelon', 'pineapple', 'mango', 'papaya', 'orange1', 'orange2', 'orange11']
 
 # 执行100次随机搜索
-for i in range(91):
+for i in range(31):
     # 随机选择搜索关键字
     keyword = random.choice(search_keywords)+str(i)
     # 访问Bing主页
@@ -40,7 +40,7 @@ options.add_argument("user-agent=Mozilla/5.0 (Linux; Android 11; Redmi K30 Pro) 
 driver2 = Edge(options=options, executable_path=driver_path)
 # 移动端
 # 执行100次随机搜索
-for i in range(61):
+for i in range(21):
     # 随机选择搜索关键字
     keyword = random.choice(search_keywords)+str(i)
     # 访问Bing主页

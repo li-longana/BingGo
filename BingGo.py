@@ -8,6 +8,12 @@ options = EdgeOptions()
 options.use_chromium = True
 options.add_argument("start-maximized")
 
+#设置代理
+#options.add_argument('--proxy-server=http://127.0.0.1:7890')
+
+#自动登录微软账号（在Default文件夹中，应该有一个名为Login Data的文件）
+#options.add_argument("user-data-dir=C:\\Users\\你的用户名\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default")
+
 driver_path = os.path.join(os.getcwd(), 'msedgedriver.exe')
 # # 创建Edge浏览器驱动程序对象
 driver = Edge(options=options, executable_path=driver_path)
